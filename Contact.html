@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SolarFields - Energia</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1748a3d8, #1748a3d8);
+            color: #ffffff;
+        }
+        header {
+            background: #1748a3d8;
+            color: #fbfdfc;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(61, 78, 64, 0.459);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #1748a3d8;
+            box-shadow: 0px 4px 6px rgba(70, 72, 85, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #272636;
+            color: #fff;
+        }
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(29, 22, 22, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(126, 35, 35, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #ffde59;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        footer {
+            background: #834e1100;
+            padding: 20px 0;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .pixel-art {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            color: #ffde59;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>SolarFields - Energia</h1>
+        <nav>
+        <ul>
+            <li><a href="index.html">Começar</a></li>
+            <li><a href="#roadmap">Tecnlogia</a></li>
+            <li><a href="#performance">Desenvolvedores</a></li>
+            <li><a href="contact.html">Contato</a>
+                
+        </ul>
+    </nav>
+        
+    </header>
+    
+    
+<body>
+    <form action="https://formsubmit.co/solarfieldsltda@gmail.com
+    " method="POST">
+        <label for="email">E-mail</label>
+        <input type="text" name="name" id="email" require
+        <label for="message">mensagem</label>
+        <input type="text" name="message"id="message" required>
+        <input type="hidden" name="_next" value="https://127.0.0.1:5500/thanks.html">
+        <button type="submit">Send</button>
+   </form>
+    
+</body>
+</html>
+</main>
+<footer>
+    <p class="pixel-art">SOLARFIELDS LTDA</p>
+    <p>&copy; 2024 SolarFields LTDA. Todos os direitos reservados.</p>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Outubro 2023', 'Abril 2024', 'Janeiro 2025', 'Junho 2025', 'Dezembro 2026', 'Março 2027', 'Dezembro 2027'],
+                datasets: [{
+                    label: 'Progresso do Roadmap',
+                    data: [10, 25, 50, 70, 90, 95, 100],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
